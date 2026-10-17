@@ -48,16 +48,6 @@ nav a:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
-/* Night Dress Banner */
-.nightdress {
-  background: url('nightdress.jpg') no-repeat center center/cover;
-}
-
-/* Maternity Wear Banner */
-.maternity {
-  background: url('maternity.jpg') no-repeat center center/cover;
-}
-
 .hero h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
