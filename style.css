@@ -24,8 +24,9 @@ nav a:hover {
   color: #e91e63;
 }
 
-/* Shared Hero Styles */
+/* Hero Section */
 .hero {
+  background: url('banner.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 80px 20px;
