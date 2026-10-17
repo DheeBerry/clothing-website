@@ -24,14 +24,13 @@ nav a:hover {
   color: #e91e63;
 }
 
-/* Hero Section */
+/* Shared Hero Styles */
 .hero {
-  background: url('banner.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
-  padding: 60px 20px;   /* reduced vertical padding */
+  padding: 80px 20px;
   position: relative;
-  min-height: 70vh;     /* ensures banner fills most of screen */
+  min-height: 70vh;
 }
 
 .hero::before {
@@ -47,6 +46,16 @@ nav a:hover {
   position: relative;
   z-index: 1;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Night Dress Banner */
+.nightdress {
+  background: url('nightdress.jpg') no-repeat center center/cover;
+}
+
+/* Maternity Wear Banner */
+.maternity {
+  background: url('maternity.jpg') no-repeat center center/cover;
 }
 
 .hero h2 {
