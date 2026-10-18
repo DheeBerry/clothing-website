@@ -53,6 +53,18 @@ nav a:hover {
   background: url('about-banner.jpg') no-repeat center center/cover;
 }
 
+.about-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+  background: rgba(0,0,0,0.6); /* semi-transparent box */
+  padding: 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'Georgia', serif; /* richer font */
+}
+
 .hero h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
