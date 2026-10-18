@@ -17,40 +17,55 @@
     </nav>
   </header>
 
-  <!-- Hero Banner with Overlay -->
-  <section class="hero about-banner">
-    <div class="about-overlay">
-      <h2>About Us</h2>
-      <p>Celebrating elegance, comfort, and timeless style.</p>
+  <!-- Slider Section -->
+  <section class="slider">
+    <div class="slide fade">
+      <img src="about-banner1.jpg" alt="Our Story">
+      <div class="caption">
+        <h2>Our Story</h2>
+        <p>Founded with a passion for fashion and comfort, DheeBerry Clothing brings together elegant night dresses, peplum feeding night dresses, and maternity wear.</p>
+      </div>
+    </div>
+
+    <div class="slide fade">
+      <img src="about-banner2.jpg" alt="Our Vision">
+      <div class="caption">
+        <h2>Our Vision</h2>
+        <p>To redefine everyday fashion by blending style with practicality. Whether it’s a cozy evening at home or a special occasion, our designs are crafted to make you shine.</p>
+      </div>
+    </div>
+
+    <div class="slide fade">
+      <img src="about-banner3.jpg" alt="Our Values">
+      <div class="caption">
+        <h2>Our Values</h2>
+        <ul>
+          <li><strong>Elegance:</strong> Designs that highlight beauty and sophistication.</li>
+          <li><strong>Comfort:</strong> Fabrics chosen for softness and ease of wear.</li>
+          <li><strong>Care:</strong> Thoughtful tailoring for maternity and feeding wear.</li>
+        </ul>
+      </div>
     </div>
   </section>
-
-  <!-- Main Content -->
-  <main style="padding:40px; max-width:900px; margin:auto;">
-    <h2>Our Story</h2>
-    <p>
-      Founded with a passion for fashion and comfort, <strong>DheeBerry Clothing</strong> 
-      brings together elegant night dresses, peplum feeding night dresses, and maternity wear. 
-      We believe every woman deserves clothing that makes her feel confident and graceful.
-    </p>
-
-    <h2>Our Vision</h2>
-    <p>
-      To redefine everyday fashion by blending style with practicality. 
-      Whether it’s a cozy evening at home or a special occasion, our designs 
-      are crafted to make you shine.
-    </p>
-
-    <h2>Our Values</h2>
-    <ul>
-      <li><strong>Elegance:</strong> Designs that highlight beauty and sophistication.</li>
-      <li><strong>Comfort:</strong> Fabrics chosen for softness and ease of wear.</li>
-      <li><strong>Care:</strong> Thoughtful tailoring for maternity and feeding wear.</li>
-    </ul>
-  </main>
 
   <footer>
     <p>© 2026 DheeBerry Clothing. All rights reserved.</p>
   </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    }
+  </script>
 </body>
 </html>
